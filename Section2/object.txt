@@ -1,0 +1,15 @@
+irb(main):001:0> '1'.to_s
+=> "1"
+irb(main):002:0> 1.to_s
+=> "1"
+irb(main):003:0> nil.to_s
+=> ""
+irb(main):004:0> true.to_s
+=> "true"
+irb(main):005:0> false.to_s
+=> "false"
+irb(main):006:0> false.to_s
+=> "false"
+irb(main):007:0> /\d+/.to_s
+=> "(?-mix:\\d+)"
+irb(main):008:0>
