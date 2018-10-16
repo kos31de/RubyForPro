@@ -7,3 +7,9 @@ puts %Q!He said, #{sometime}!
 # %!!もダブルクォートと同じ
 something = "Bye."
 puts %!He said, "#{something}"!
+
+# ?を区切り文字として使う
+puts %q?He said, "Don't speak"?
+
+# {}を区切り文字に
+puts %q{He said, "Don't speak"}
