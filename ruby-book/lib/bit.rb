@@ -1,0 +1,6 @@
+puts (~0b1010).to_s(2)
+puts (0b1010 & 0b1100).to_s(2)
+puts (0b1010 | 0b1100).to_s(2)
+puts (0b1010 ^ 0b110).to_s(2)
+puts (0b1010 >> 1).to_s(2)
+puts (0b1010 << 1).to_s(2)
