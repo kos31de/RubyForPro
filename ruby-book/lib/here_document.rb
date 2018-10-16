@@ -25,3 +25,10 @@ def some_method
 end
 
 puts some_method
+
+name = 'Alice'
+a = <<TEXT
+ようこそ、#{name}さん!
+以下のメッセージを御覧ください。
+TEXT
+puts a
