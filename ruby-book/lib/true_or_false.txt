@@ -1,0 +1,12 @@
+irb(main):001:0> 1 && 2 && 3
+=> 3
+irb(main):002:0> 1 && nil && 3
+=> nil
+irb(main):003:0> 1 && false && 3
+=> false
+irb(main):004:0> nil || false
+=> false
+irb(main):005:0> false || nil
+=> nil
+irb(main):006:0> nil || false || 2 || 3
+=> 2
