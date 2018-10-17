@@ -1,0 +1,37 @@
+irb(main):001:0> puts 123
+123
+=> nil
+irb(main):002:0> puts 'abc'
+abc
+=> nil
+irb(main):003:0> print 123
+123=> nil
+irb(main):004:0> print 'abc'
+abc=> nil
+irb(main):005:0> p 124
+124
+=> 124
+irb(main):006:0> p 'abc'
+"abc"
+=> "abc"
+
+変数に代入するときにダブルクォートじゃないと、putsしても改行されない。
+irb(main):011:0> s = "abc\ndef"
+=> "abc\ndef"
+irb(main):012:0> puts s
+abc
+def
+=> nil
+
+irb(main):001:0> a = [1,2,3]
+=> [1, 2, 3]
+irb(main):002:0> puts a
+1
+2
+3
+=> nil
+irb(main):003:0> print a
+[1, 2, 3]=> nil
+irb(main):004:0> p a
+[1, 2, 3]
+=> [1, 2, 3]
