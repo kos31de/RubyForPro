@@ -13,3 +13,8 @@ m(c)
 
 p a.equal?(b)
 p b.equal?(c)
+
+def m!(d)
+  puts d.upcase!
+end
+m!(c)
