@@ -5,3 +5,5 @@ class SampleTest < Minitest::Test
     assert_equal 'RUBY', 'ruby'.upcase
   end
 end
+
+#偽であればパスするのはrefute
