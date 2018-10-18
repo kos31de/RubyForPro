@@ -1,0 +1,7 @@
+irb(main):001:0> 12.divmod(3)
+=> [4, 0]
+irb(main):002:0> quo_rem = 14.divmod(3)
+=> [4, 2]
+irb(main):003:0> quotient, remainder = 14.divmod(3)
+=> [4, 2]
+
