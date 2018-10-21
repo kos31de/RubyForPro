@@ -19,3 +19,11 @@ puts (1...5).to_a
 puts ('bad'..'bag').to_a
 puts ('bad'...'bag').to_a
 
+numbers = (1..4).to_a
+sum = 0
+numbers.each {|n| sum += n}
+puts sum
+
+sum = 0
+(1..4).each{|n| sum += n}
+puts sum
