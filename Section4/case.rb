@@ -15,3 +15,7 @@ puts charge(19)
 
 puts (1..5).to_a
 puts (1...5).to_a
+
+puts ('bad'..'bag').to_a
+puts ('bad'...'bag').to_a
+
