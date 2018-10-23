@@ -1,0 +1,7 @@
+=begin
+常にイミュータブルなクラスや値４つ。
+・数値（ Integer クラス や Float クラス）
+・シンボル（ Symbol クラス）
+・true/ false（ TrueClass クラス と FalseClass クラス）
+・nil（ NilClass クラス）
+=end
