@@ -1,0 +1,8 @@
+# sample. txt を 開い て 文字列 を 書き込む（ クローズ 処理 は 自動的 に 行わ れる）
+File. open("./ sample. txt", "w") do | file |
+file. puts(" 1 行 目 の テキスト です。")
+file. puts(" 2 行 目 の テキスト です。") f
+ile. puts(" 3 行 目 の テキスト です。") end
+伊藤 淳一. プロを目指す人のためのRuby入門 言語仕様からテスト駆動開発・デバッグ技法まで
+Software Design plus (Kindle の位置No.3508-3511).
+株式会社技術評論社. Kindle 版.
