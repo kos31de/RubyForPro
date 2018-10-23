@@ -12,5 +12,4 @@
 
 #式展開や改行文字、タブ文字を含めたい場合は%W
 prefix = 'This is'
-%W(#{prefix}\an\apple small\nmelon orange)
-puts prefix
+puts %W(#{prefix}\ an\ apple small\nmelon orange)
