@@ -8,6 +8,7 @@ end
 puts n
 puts sum_value
 
+=begin
 sum = 0
 for n in numbers
   sum_value = n.even? n*10:n
@@ -16,3 +17,4 @@ end
 
 puts n
 puts sum_value
+=end
