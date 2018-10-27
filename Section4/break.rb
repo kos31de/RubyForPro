@@ -3,3 +3,15 @@ numbers.each do |n|
   puts n
   break if n == 5
 end
+
+ret =
+    while true
+      break
+    end
+puts ret
+
+ret =
+    while true
+      break 123
+    end
+puts ret
