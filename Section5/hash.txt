@@ -1,0 +1,5 @@
+irb(main):001:0> {}.class
+=> Hash
+
+{'japan' => 'yen', 'us' => 'dollar', 'india' => 'rupee'}
+改行して最後にカンマがついてもよい。
