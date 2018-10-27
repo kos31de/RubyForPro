@@ -1,10 +1,13 @@
 foods = ['ピーマン', 'トマト', 'セロリ']
+count = 0
 foods.each do |food|
   print "#{food}は好きですか?"
-  #sampleは配列からランダムに1要素を取得する
-  answer = ['はい', 'いいえ'].sample
+  #わざといいえのみにする
+  answer = 'いいえ'
   puts answer
-
-  #はいと応えない限りもう一度聞き直す
-  redo unless answer == 'はい'
+  count += 1
+  #やりなおしは２回までにする
+  redo if answer != 'はい' && count < 2
+  #カウントをリセット
+  count = 0
 end
