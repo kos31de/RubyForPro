@@ -3,3 +3,7 @@ irb(main):001:0> {}.class
 
 {'japan' => 'yen', 'us' => 'dollar', 'india' => 'rupee'}
 改行して最後にカンマがついてもよい。
+
+currencies = ['japan' => 'yen', 'us' => 'dollar', 'india' => 'rupee']
+
+currencies['italy'] = 'euro'
