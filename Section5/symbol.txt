@@ -3,3 +3,9 @@ irb(main):001:0> :apple.class
 irb(main):002:0> 'apple'.class
 => String
 irb(main):003:0>
+
+irb(main):001:0> :apple.object_id
+=> 1166748
+irb(main):002:0> 'apple'.object_id
+=> 70137571121520
+irb(main):003:0>
