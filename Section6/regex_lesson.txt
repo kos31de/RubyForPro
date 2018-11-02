@@ -1,0 +1,33 @@
+\dは1個の半角数字を意味するメタ文字。
+文字の集合を表しているので特に文字クラスと呼ばれる。
+
+irb(main):001:0> text = <<-TEXT
+irb(main):002:0" 名前：伊藤淳一
+irb(main):003:0" 電話：03-1234-5678
+irb(main):004:0" 住所：兵庫県西脇市板波町1-2-3
+irb(main):005:0" TEXT
+=> "名前：伊藤淳一\n電話：03-1234-5678\n住所：兵庫県西脇市板波町1-2-3\n"
+irb(main):006:0> text.scan
+ArgumentError: wrong number of arguments (given0, expected 1)
+        from (irb):6:in `scan'
+        from (irb):6
+        from /usr/local/bin/irb:11:in `<main>'
+irb(main):007:0> text.scan /\d\d-\d\d\d\d-\d\d\d\d/
+=> ["03-1234-5678"]
+
+#scriptularを使って、JS上でも動くことを確認した。
+
+#ChromeのConsoleでも以下のように実行。
+var text = "名前：伊藤淳一\n電話：03-1234-5678\n住所：兵庫県西脇市板波町1-2-3";
+text.match(/\d\d-\d\d\d\d-\d\d\d\d/g);
+["03-1234-5678"]
+
+{n,m}は直前の文字がn個以上、m個以下という意味。
+{n}はちょうどn文字。
+というメタ文字は文字量を指定するので、量指定子と呼ばれます。
+{n,m}は直前の文字がn個以上、m個以下と呼ばれます。
+
+AまたはBのいずれかの1文字を表す場合は[AB]
+[]の中に文字数制限はない。
+
+#[a-z]と[-az]ではハイフンの意味が異なる。

@@ -11,3 +11,13 @@ irb(main):005:0" TEXT
 irb(main):006:0> text.scan(/[A-Z][A-Za-z]+/)
 => ["Ruby", "Python", "Java", "JavaScript"]
 irb(main):007:0>
+
+#郵便番号にハイフンを入れる!!
+irb(main):001:0> text = <<TEXT
+irb(main):002:0" 僕の住所は6770056 兵庫県西脇市板波町1234だよ。
+irb(main):003:0" TEXT
+=> "僕の住所は6770056 兵庫県西脇市板波町1234だよ。\n"
+irb(main):004:0> puts text.gsub(/(\d{3})(\d{4})/,'\1-\2')
+僕の住所は677-0056 兵庫県西脇市板波町1234だよ。
+=> nil
+irb(main):005:0>
