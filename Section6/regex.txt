@@ -1,0 +1,13 @@
+I love Ruby. Python is a great language. Java and JavaScript are different.
+
+伊藤 淳一. プロを目指す人のためのRuby入門 言語仕様からテスト駆動開発・デバッグ技法まで Software Design plus (Kindle の位置No.4642-4643). 株式会社技術評論社. Kindle 版. 
+
+irb(main):001:0> text = <<TEXT
+irb(main):002:0" I love Ruby.
+irb(main):003:0" Python is good.
+irb(main):004:0" Java and JavaScript is bad.
+irb(main):005:0" TEXT
+=> "I love Ruby.\nPython is good.\nJava and JavaScript is bad.\n"
+irb(main):006:0> text.scan(/[A-Z][A-Za-z]+/)
+=> ["Ruby", "Python", "Java", "JavaScript"]
+irb(main):007:0>
