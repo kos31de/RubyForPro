@@ -1,0 +1,9 @@
+irb(main):001:0> regex = /\d{3}-d{4}/
+=> /\d{3}-d{4}/
+irb(main):002:0> regex.class
+=> Regexp
+irb(main):003:0> '123-4567' =~ /\d{3}-\d{4}/
+=> 0
+irb(main):004:0> 'hello' =~ /\d{3}-\d{4}/
+=> nil
+irb(main):005:0>
