@@ -1,0 +1,47 @@
+irb(main):001:0> :12345
+SyntaxError: (irb):1: syntax error, unexpected tINTEGER, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+:12345
+      ^
+        from /usr/local/bin/irb:11:in `<main>'
+irb(main):002:0> :ruby-is-fun
+NameError: undefined local variable or method `is' for main:Object
+        from (irb):2
+        from /usr/local/bin/irb:11:in `<main>'
+irb(main):003:0> :ruby is fun
+SyntaxError: (irb):3: syntax error, unexpected tIDENTIFIER, expecting end-of-input
+:ruby is fun
+        ^
+        from /usr/local/bin/irb:11:in `<main>'
+irb(main):004:0> :()
+SyntaxError: (irb):4: syntax error, unexpected '(', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+        from /usr/local/bin/irb:11:in `<main>'
+irb(main):005:0>
+ #シングルクォートで囲むとシンボルとして有効
+irb(main):005:0> :'12345'
+=> :"12345"
+irb(main):006:0> :'ruby-is-fun'
+=> :"ruby-is-fun"
+irb(main):007:0> :'ruby is fun'
+=> :"ruby is fun"
+irb(main):008:0> :'()'
+=> :"()"
+#
+irb(main):001:0> name = 'Alice'
+=> "Alice"
+irb(main):002:0> :"#{name.upcase}"
+=> :ALICE
+irb(main):003:0> hash = {'abc': 123}
+=> {:abc=>123}
+irb(main):004:0> %s!ruby is fun!
+=> :"ruby is fun"
+irb(main):005:0> %s(ruby is fun)
+=> :"ruby is fun"
+irb(main):006:0> %i(appler orange melon)
+=> [:appler, :orange, :melon]
+irb(main):007:0> name = 'Alice'
+=> "Alice"
+irb(main):008:0> %i(hello\ngood-bye #{name.upcase})
+=> [:"hello\\ngood-bye", :"\#{name.upcase}"]
+irb(main):009:0> %I(hello\ngood-bye #{name.upcase})
+=> [:"hello\ngood-bye", :ALICE]
+irb(main):010:0>
