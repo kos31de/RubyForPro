@@ -31,3 +31,10 @@ puts pattern = <<'TEXT'
 TEXT
 regexp = Regexp.new(pattern, Regexp::EXTENDED)
 '123-4567' =~ regexp
+
+#iオプションとmオプションを同時に使う
+puts "HELLO\nBYE" =~ /Hello.Bye/im
+
+#|で連結
+regexp = Regexp.new('Hello.Bye', Regexp::IGNORECASE | Regexp::MULTILINE)
+puts "HELLO\nBYE" =~ regexp
