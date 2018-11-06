@@ -11,15 +11,15 @@ end
 
 # ユーザーのデータを作成する
 users = []
-users << { first_name: 'Alice', last_name: 'Ruby', age: 20 }
-users << { first_name: 'Bob', last_name: 'Python', age: 30 }
+users << User.new('Alice', 'Ruby', 20)
+users << User.new('Bob', 'Python', 30)
 
 #氏名を作成するメソッド
 def full_name(user)
-    "#{user[:first_name]}#{user[:last_name]}"
+  "#{user.first_name} #{user.last_name}"
 end
 
 #ユーザーのデータを表示する
 users.each do |user|
-    puts "氏名: #{user[:first_name]} #{user[:last_name]}、年齢: #{user[:age]} "
+  puts "氏名: #{full_name(user)}、年齢: #{user.age}"
 end
