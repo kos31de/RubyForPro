@@ -22,3 +22,12 @@ puts regexp = /
     \d{4} #郵便番号の末尾4桁
 /x
 '123-4567' =~ regexp
+
+#バックスラッシュを特別扱いしないように'TEXT'を使う
+puts pattern = <<'TEXT'
+    \d{3} #郵便番号の先頭3桁
+    - #区切り文字のハイフン
+    \d{4} #郵便番号の末尾4桁
+TEXT
+regexp = Regexp.new(pattern, Regexp::EXTENDED)
+'123-4567' =~ regexp
