@@ -5,4 +5,4 @@ puts text.gsub(/,|-/, hash)
 
 #第2引数の代わりに、ブロックの戻り値で置き換える文字列を指定
 #カンマはコロンに、それ以外はスラッシュに置き換える
-text.gsub(/,|-/) {|matched| matched == ',' ? ':' : '/'|}
+text.gsub(/,|-/) {|matched| matched == ','?':':'/'}
