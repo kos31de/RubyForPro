@@ -6,7 +6,6 @@ class User
     @name = name
     @age = age
   end
-
   # nameメソッドやname=メソッドを明示的に定義する必要がない
 end
 user = User.new('Alice', 20)
