@@ -7,7 +7,7 @@ class User
   def hello
     # shuffled_nameはローカル変数
     
-    puts "Hello, I am #{@name}."
+    puts "Hello, I am #{@names}."
   end
 end
 user = User.new('Alice')
