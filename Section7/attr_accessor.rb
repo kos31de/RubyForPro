@@ -12,5 +12,4 @@ end
 user = User.new('Alice', 20)
 
 puts user.name
-
 puts user.age
