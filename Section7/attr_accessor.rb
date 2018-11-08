@@ -1,15 +1,16 @@
 class User
   # @nameを読み書きするメソッドが自動的に表示される
-  attr_reader :name
+  attr_accessor :name, :age
 
-  def initialize(name)
+  def initialize(name, age)
     @name = name
+    @age = age
   end
 
   # nameメソッドやname=メソッドを明示的に定義する必要がない
 end
-user = User.new('Alice')
-# @nameを変更しようとするとNoMethodErrorになる
-user.name = 'Bob'
-# @nameを参照する
-puts user.names
+user = User.new('Alice', 20)
+
+puts user.name
+
+puts user.age
