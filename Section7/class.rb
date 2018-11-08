@@ -1,14 +1,11 @@
 #Userクラスの定義
 class User
-  def initialize
-    puts 'initialized.'
+  def initialize(name, age)
+    puts "name: #{name}, #{age}"
   end
 end
-User.new
 
-user = User.new
-user.initialize
-puts user
+User.new('Alice', 20)
 
 #OrderItemのクラスの定義
 class OrderItem
