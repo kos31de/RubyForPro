@@ -5,23 +5,31 @@ class User
     @name = name
   end
 
-  def hello
-    # selfなしてnameメソッドを呼ぶ
-    puts "Hello, I am #{name}."
+  def rename_to_bob
+    # selfなしてname=メソッドを呼ぶ(?)
+    name = 'Bob'
   end
 
-  def hi
-    # self付きでnameメソッドを呼ぶ
-    puts "Hi, I am #{self.name}."
+  def rename_to_carol
+    # self付きでname=メソッドを呼ぶ
+    self.name = 'Carol'
   end
 
-  def my_name
-    # 直接インスタンス変数の@nameにアクセスする
-    puts "My name is #{@name}."
+  def rename_to_dave
+    # 直接インスタンス変数を書き換える
+    @name = 'Dave'
   end
-end
+end 
 
 user = User.new('Alice')
-user.hello
-user.hi
-user.my_name
+# Bobにリネーム、、、できてない!
+user.rename_to_bob
+puts user.name
+
+# Carolにリネーム
+user.rename_to_carol
+puts user.name
+
+# Daveにリネーム
+user.rename_to_dave
+puts user.name
