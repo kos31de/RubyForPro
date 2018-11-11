@@ -5,10 +5,8 @@ class  DVD < Product
   attr_reader :running_time
 
   def initialize(name, price, running_time)
-    # スーパークラスにも存在している属性
-    @name = name
-    @price = price
-    # DVDクラス独自の属性
+    # スーパークラスのinitializeメソッドを呼び出す
+    super(name, price)
     @running_time = running_time
   end
 end
