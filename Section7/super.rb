@@ -17,3 +17,5 @@ dvd = DVD.new('A great movie', 1000, 120)
 puts dvd.name
 puts dvd.price
 puts dvd.running_time
+
+# 実行してみるとこの下にproduct_class.rbの出力がある
