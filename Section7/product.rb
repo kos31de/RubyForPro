@@ -18,10 +18,13 @@ class DVD < Product
     super(name, price)
     @running_time = running_time
   end
-end
 
-product = Product.new('A great movie', 1000)
-puts product.to_s
+  def to_s
+    # superでスーパークラスのto_sメソッドを呼び出す
+    #superで呼び出されるのはProductクラスのto_sメソッドの内容
+    "#{super}, running_time: #{running_time}"
+  end
+end
 
 dvd = DVD.new('An awesome film', 3000, 120)
 puts dvd.to_s
