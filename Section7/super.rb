@@ -6,7 +6,8 @@ class  DVD < Product
 
   def initialize(name, price, running_time)
     # 引数をスーパークラスのメソッドにわたす。つまりsuper(name, price)
-    super
+    # super()は引数無しでスーパークラスのメソッドを呼び出す
+    super()
     @running_time = running_time
   end
 end
