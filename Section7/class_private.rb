@@ -1,14 +1,10 @@
 class User
-  class << self
-    # class << self構文ならクラスメソッドでもprivateが機能する
-  private
-
-  # クラスメソッドもprivateメソッドになる?
-    def hello
-      puts "Hello!"
-    end
+  def self.hello
+    puts "Hello!"
   end
 end
-
-# クラスメソッドはprivateメソッドにならない!
+# 後からクラスメソッドをprivateに変更する
+  private_class_method :hello
+end
 User.hello
+# クラスメソッドはインスタンスメソッドのように、privateキーワードの下に指定してもprivateにならない
