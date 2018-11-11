@@ -5,8 +5,8 @@ class  DVD < Product
   attr_reader :running_time
 
   def initialize(name, price, running_time)
-    # スーパークラスのinitializeメソッドを呼び出す
-    super(name, price)
+    # 引数をスーパークラスのメソッドにわたす。つまりsuper(name, price)
+    super
     @running_time = running_time
   end
 end
