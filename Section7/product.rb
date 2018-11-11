@@ -5,6 +5,10 @@ class Product
     @name = name
     @price = price
   end
+
+  def to_s
+    "name: #{name}, price: #{price}"
+  end
 end
 
 class DVD < Product
