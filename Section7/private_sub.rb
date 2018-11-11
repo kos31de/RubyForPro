@@ -1,18 +1,28 @@
 class Product
+  def to_s
+    # nameは常に"A great movie"になる、とは限らない
+    "name: #{name}"
+  end
+
   private
-  # これはprivateメソッド
+
   def name
-    'A great movie'
+    puts 'A great movie'
   end
 end
 
 class DVD < Product
-  def to_s
-    # nameはスーパークラスのprivateメソッド
-    puts "name: #{name}"
+  private
+  # スーパークラスのprivateメソッドをオーバーライドする
+  def name
+    puts 'An awesome film'
   end
 end
 
+product = Product.new
+# Productクラスのnameメソッドが使われる
+product.to_s
+
 dvd = DVD.new
-# 内部でスーパークラスのprivateメソッドを呼んでいるがエラーにはならない
+# オーバーライドしたDVDクラスのnameメソッドが使われる
 dvd.to_s
