@@ -1,47 +1,49 @@
 class Product
-  # クラスインスタンス変数
-  @name = 'Product'
+ 
+  @@name = 'Product'
 
   def self.name
-    # クラスインスタンス変数
-    @name
+    @@name
   end
 
-  def initialize(name)
-    # インスタンス変数
-    @name = name
+  def initialize(name)   
+    @@name = name
   end
 
-  # attr_reader :nameでもいいが、@nameの中身を意識するためにあえてメソッドを定義する
+  
   def name
-    # インスタンス変数
-    @name
+    @@name
   end
 end
 
 class DVD < Product
-  @name = 'DVD'
+  @@name = 'DVD'
 
   def self.name
-    # クラスインスタンス変数を参照
-    @name
+    @@name
   end
 
   def upcase_name
-    # インスタンス変数を参照
-    @name.upcase
+    @@name.upcase
   end
 end
 
-Product.name
-DVD.name
+# DVDクラスを定義したタイミングで@@nameが"DVD"に変更される
+puts Product.name
+puts DVD.name
 
 puts product = Product.new('A great movie')
 puts product.name
 
-puts dvd = DVD.new('An awesome filem')
+# Product.newのタイミングで@@nameが"A great movie"に変更される
+puts Product.name
+puts DVD.name
+
+puts dvd = DVD.new('An awesome film')
 puts dvd.name
 puts dvd.upcase_name
 
+# DVD.newのタイミング@@nameが"An awesome film"に変更される
+puts product.name
 puts Product.name
 puts DVD.name
