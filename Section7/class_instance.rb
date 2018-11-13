@@ -19,8 +19,29 @@ class Product
   end
 end
 
+class DVD < Product
+  @name = 'DVD'
+
+  def self.name
+    # クラスインスタンス変数を参照
+    @name
+  end
+
+  def upcase_name
+    # インスタンス変数を参照
+    @name.upcase
+  end
+end
+
 Product.name
+DVD.name
 
 puts product = Product.new('A great movie')
 puts product.name
+
+puts dvd = DVD.new('An awesome filem')
+puts dvd.name
+puts dvd.upcase_name
+
 puts Product.name
+puts DVD.name
