@@ -20,4 +20,3 @@ display_name(user)
 
 product = Product.new
 display_name(product)
-
