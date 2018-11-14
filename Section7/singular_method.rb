@@ -1,4 +1,4 @@
-alice = 'I am Alice'.
+alice = 'I am Alice.'
 bob = 'I am Bob.'
 
 # aliceのオブジェクトにだけ、shuffleメソッドを定義する
@@ -8,4 +8,5 @@ end
 
 # aliceはshuffleメソッドを持つが、bobは持たない
 puts alice.shuffle
-puts bob.shuffle
+# puts bob.shuffle
+# コメントアウトすれば実行可能
