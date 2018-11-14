@@ -7,7 +7,7 @@ class Product
   def display_text
     # stock?メソッドはサブクラスで必ず実装してもらう想定
     stock = stock?? 'あり' : 'なし'
-    "商品名: #{@name} 価格:#{@price} 在庫:#{stock}"
+    puts "商品名: #{@name} 価格:#{@price}円 在庫:#{stock}"
   end
 end
 
@@ -19,9 +19,9 @@ class DVD < Product
   end
 end
 
-product = Product.new('A great film', 1000)
+#product = Product.new('A great film', 1000)
 # スーパークラスはstock?メソッドを持たないのでエラーが起きる
-product.display_text
+#product.display_text
 
 dvd = DVD.new('An awesome film', 3000)
 # サブクラスはstock?メソッドを持つのでエラーが起きない
