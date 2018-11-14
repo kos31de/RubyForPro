@@ -23,4 +23,3 @@ class << alice
     puts 'Hi.'
   end
 end
-
