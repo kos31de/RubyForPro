@@ -26,6 +26,10 @@ c = Product.new('A-0001', 'A great movie')
 puts a == b
 puts a == c
 
+# .==で呼び出してみる
+puts a.==(b)
+puts a.==(c)
+
 # Product以外の比較はfalse
 puts a == 1
 puts a == 'a'
