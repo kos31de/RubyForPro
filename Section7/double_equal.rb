@@ -5,6 +5,16 @@ class Product
     @code = code
     @name = name
   end
+
+  def ==(other)
+    if other.is_a?(Product)
+      # 商品コードが一致すれば同じProductと見なす
+      code == other.code
+    else
+      # otherがProductでなければ常にfalse
+      false
+    end
+  end
 end
 
 # aとcが同じ商品コード
