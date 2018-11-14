@@ -1,0 +1,31 @@
+class Product
+  def title
+    log 'title is called'
+    'A great movie'
+  end
+
+  private
+
+  def log(text)
+    # 本来であれば標準ライブラリのLoggerクラスなどを使うべきだが、簡易的にputsで済ませる
+  end
+end
+
+class User
+  def name
+    log 'name is called.'
+    'Alice'
+  end
+
+  # このメソッドの実装はProductクラスのlogメソッドと全く同じ
+  def log(text)
+    puts "[LOG] #{text}"
+  end
+end
+
+product = Product.new
+product.title
+
+user = User.new
+user.name
+
