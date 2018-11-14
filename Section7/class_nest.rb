@@ -11,3 +11,4 @@ end
 blood_type = User::BloodType.new('B')
 blood_type.type
 
+# 定義されたクラスは全てpublicになる
