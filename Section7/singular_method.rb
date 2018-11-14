@@ -1,12 +1,8 @@
 alice = 'I am Alice.'
-bob = 'I am Bob.'
-
-# aliceのオブジェクトにだけ、shuffleメソッドを定義する
-def alice.shuffle
-  chars.shuffle.join
+# aliceというオブジェクトに特異メソッドを追加するもうひとつの方法
+class << alice
+  def shuffle
+    puts chars.shuffle.join
+  end
 end
-
-# aliceはshuffleメソッドを持つが、bobは持たない
-puts alice.shuffle
-# puts bob.shuffle
-# コメントアウトすれば実行可能
+alice.shuffle
