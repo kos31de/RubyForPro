@@ -21,7 +21,7 @@ end
 
 #product = Product.new('A great film', 1000)
 # スーパークラスはstock?メソッドを持たないのでエラーが起きる
-#product.display_text
+#product.display_textn
 
 dvd = DVD.new('An awesome film', 3000)
 # サブクラスはstock?メソッドを持つのでエラーが起きない
