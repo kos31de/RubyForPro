@@ -1,5 +1,8 @@
 require 'minitest/autorun'
-require_relative '../lib/deep_freezable.rb'
+# テストrunしなかった気がするけど、削除
+#require_relative '../lib/deep_freezable.rb'
+require_relative '../lib/bank'
+require_relative '../lib/team'
 
 class DeepFreezableTest < Minitest::Test
   def test deep_freeze
