@@ -5,7 +5,7 @@ require_relative '../lib/bank'
 require_relative '../lib/team'
 
 class DeepFreezableTest < Minitest::Test
-  def test deep_freeze
+  def test_deep_freeze
     # とりあえずモジュールが参照できることを確認する
     assert DeepFreezable
   end
