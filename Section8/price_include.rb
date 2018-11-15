@@ -1,7 +1,8 @@
 module Taggable
   def price_tag
+    # あえてselfをつける
     # priceメソッドはinclude先で定義されているはず、という前提
-    "#{price}円"
+    "#{self.price}円"
   end
 end
 
