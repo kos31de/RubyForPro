@@ -5,5 +5,6 @@ p 2 <=> 'abc'
 
 puts 'xyz' <=> 'abc'
 puts 'abc' <=> 'abc'
-p 'abc' <=> 'xyz'
+puts 'abc' <=> 'xyz'
+p 'abc' <=> 123
 
