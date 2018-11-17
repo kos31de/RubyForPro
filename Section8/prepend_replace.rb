@@ -25,4 +25,4 @@ end
 
 # エイリアスメソッドを使った場合と同じ結果が得られる
 product = Product.new
-product.name
+puts product.name
