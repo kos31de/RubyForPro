@@ -7,4 +7,3 @@ puts 'xyz' <=> 'abc'
 puts 'abc' <=> 'abc'
 puts 'abc' <=> 'xyz'
 p 'abc' <=> 123
-
