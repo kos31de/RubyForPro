@@ -9,17 +9,20 @@ end
 product = Product.new
 puts product.name
 
-# 既存メソッドを変更するためにProductクラスを再オープンする
-class Product
-  # 既存のnameメソッドはname_originalという名前で呼び出せるようにしておく
-  alias name_original name
-
-  # nameメソッドの挙動を変える
-  # (もともと実装されていたnameメソッドも再利用する)
+# prependするためのモジュールを定義する
+module NameDecorator
   def name
-    "<<#{name_original}>>"
+    # prependするとsuperはミックスインした先のクラスのnameメソッドを呼び出す
+    "<<#{super}>>"
   end
 end
 
-# 変更後のnameメソッドの実行結果
-puts product.name
+# 既存メソッドを変更するためにProductクラスを再オープンする
+class Product
+  # includeではなくprepend
+  prepend NameDecorator
+end
+
+# エイリアスメソッドを使った場合と同じ結果が得られる
+product = Product.new
+product.name
