@@ -28,3 +28,7 @@ end
 dvd = DVD.new
 puts dvd.to_s
 p DVD.ancestors
+=begin
+<DVD> <B> <A> <Product> #<DVD:0x007fcc38021d70>
+[DVD, B, A, Product, Object, Kernel, BasicObject]
+=end
