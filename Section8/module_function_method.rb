@@ -24,4 +24,5 @@ end
 
 # ミックスインとしてlogメソッドを呼び出す
 product = Product.new
-product.title
+puts product.title
+product.log 'Hello.'
