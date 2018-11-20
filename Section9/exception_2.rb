@@ -1,4 +1,5 @@
 begin 
+  # 例外が起きる処理
   1 / 0
 rescue => e
   puts "エラークラス: #{e.class}"
