@@ -12,4 +12,3 @@ rescue
     puts 'retryに失敗しました。'
   end 
 end
-
