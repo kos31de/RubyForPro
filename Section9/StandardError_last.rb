@@ -5,6 +5,6 @@ rescue NoMethodError
   puts 'NoMethodErrorです'
 rescue NameError
   puts 'NameErrorです'
-rescue StandardError
+rescue
   puts 'その他のエラーです'
 end
