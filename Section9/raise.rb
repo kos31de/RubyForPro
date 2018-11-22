@@ -8,6 +8,7 @@ def currency_of(country)
     'rupee'
   else
     # 意図的に例外を発生させる
+    # raiseメソッドに文字列だけ渡した時は、RuntimeErrorクラスの例外が発生
     raise "無効な国名です。 #{country}"
   end
 end
