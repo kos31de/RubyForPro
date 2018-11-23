@@ -1,8 +1,6 @@
 # printは文字列を表示した後に改行しない
 print 'Text?:'
 text = gets.chomp
-print 'Pattern?:'
-pattern = gets.chomp
 
 # 例外処理を組み込んで再入力可能にする
 begin
