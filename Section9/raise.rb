@@ -13,3 +13,5 @@ def currency_of(country)
 end
 
 currency_of(:italy)
+
+# 例外が発生したら即座に以上終了orフレームワークの共通処理に丸投げ、の方が安全
