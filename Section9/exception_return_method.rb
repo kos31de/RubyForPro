@@ -4,6 +4,7 @@ def some_method(n)
     'OK'
   rescue
     'error'
+# ensure節にはreturnを書かないようにする
   ensure
     'ensure'
   end
