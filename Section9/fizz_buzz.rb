@@ -9,7 +9,7 @@ def fizz_buzz(n)
     n.to_s
   end
 rescue => e
-      puts "#{e.class} #{e.message}"
+  puts "#{e.class} #{e.message}"
 end
 
 fizz_buzz(nil)
