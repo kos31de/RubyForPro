@@ -3,8 +3,8 @@ require_relative '../lib/effects'
 
 class EffectTest < Minitest::Test
   def test_reverse
-    # とりあえずモジュールが参照できることを確認する
-    assert Effects
+    effect = Effects.reverse
+    assert_equal 'ybuR si !nuf', effect.call("Ruby is fun!")
   end
 end
 
