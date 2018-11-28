@@ -4,4 +4,4 @@ hello_proc = Proc.new do
 end
 
 # do...endの代わりに{}を使っても良い
-puts hello_proc = Proc.new{'Hello!'}
+hello_proc.call
