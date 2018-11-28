@@ -9,4 +9,3 @@ end
 # Procオブジェクトを普通の引数としてgreetingメソッドに渡す(&を受け付けない)
 repeat_proc = Proc.new {|text| text * 2 }
 greeting(repeat_proc)
-
