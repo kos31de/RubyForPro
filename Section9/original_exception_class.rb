@@ -17,3 +17,4 @@ def currency_of(country)
 end
 
 currency_of(:italy)
+# 独自のメソッドや独自の属性も追加できる
