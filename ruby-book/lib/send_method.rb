@@ -4,4 +4,4 @@ str = 'a,b,c'
 puts str.send('upcase')
 
 # str.split(',')を呼ぶのと同じ
-puts str.send ('split', ',')
+puts str.send('split', ',')
