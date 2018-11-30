@@ -1,8 +1,11 @@
 # hello_worldという名前のタスクを定義する
 # タスクの説明を入れる
-desc 'テスト用のタスクです。'
-task :hello_world do
+# 名前空間を使ってタスクをグループ分け
+namespace :my_tasks do
+  desc 'テスト用のタスクです。'
+  task :hello_world do
   # ブロックの中がタスクとして実行される処理になる
-  puts 'Hello, world'
+    puts 'Hello, world'
+  end
 end
 
