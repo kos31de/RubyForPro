@@ -1,9 +1,10 @@
+# frozen_string_literal: true
+
 require 'minitest/autorun'
 require '../lib/gate'
 require '../lib/ticket'
 
 class GateTest < Minitest::Test
-
   def setup
     @umeda = Gate.new(:umeda)
     @juso = Gate.new(:juso)
@@ -27,6 +28,7 @@ class GateTest < Minitest::Test
     @umeda.enter(ticket)
     assert @mikuni.exit(ticket)
   end
+
   def test_juso_to_mikuni
     ticket = Ticket.new(150)
     @juso.enter(ticket)
