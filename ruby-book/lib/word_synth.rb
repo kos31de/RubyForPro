@@ -1,3 +1,4 @@
+# require_relative '../lib/effects'
 class WordSynth
   def initialize
     @effects = []
