@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def greeting
   puts 'おはよう'
   # ブロックに引数を渡し、戻り値を受け取る
@@ -14,9 +16,9 @@ end
 
 def greeting
   # 1この引数をブロックに渡す
-text = yield 'こんにちは'
-puts text
-puts 'こんにちは'
+  text = yield 'こんにちは'
+  puts text
+  puts 'こんにちは'
 end
 
 greeting do |text, other|

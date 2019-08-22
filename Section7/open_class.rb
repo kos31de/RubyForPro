@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Stringクラスを継承した独自クラスを定義する
 class MyString < String
   # Stringクラスを拡張するためのコードを書く
@@ -12,7 +14,7 @@ class MyArray < Array
   # Arrayクラスを拡張するためのコードを書く
 end
 
-a = MyArray.new()
+a = MyArray.new
 a << 1
 a << 2
 puts a

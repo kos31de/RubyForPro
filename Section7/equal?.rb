@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 a = 'abc'
 b = 'abc'
 puts a.equal?(b)

@@ -1,16 +1,16 @@
+# frozen_string_literal: true
+
 class Product
- 
   @@name = 'Product'
 
   def self.name
     @@name
   end
 
-  def initialize(name)   
+  def initialize(name)
     @@name = name
   end
 
-  
   def name
     @@name
   end

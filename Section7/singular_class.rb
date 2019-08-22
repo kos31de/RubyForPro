@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # クラスメソッドを定義するコード例
 class User
   def self.hello
@@ -6,7 +8,7 @@ class User
 
   class << self
     def hi
-    puts 'Hi.'
+      puts 'Hi.'
     end
   end
 end

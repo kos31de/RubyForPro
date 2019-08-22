@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Product
   attr_reader :name, :price
 
@@ -10,4 +12,3 @@ end
 product = Product.new('A great movie', 1000)
 puts product.name
 puts product.price
-

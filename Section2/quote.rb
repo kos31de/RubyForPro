@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 puts "こんにちは\nさようなら"
 puts 'こんにちは\nさようなら'
 
 name = 'Alice'
 puts 'Hello, #{name}'
 
-#ダブルクォートを使う文字列でバックスラッシュで\nを打ち消す
+# ダブルクォートを使う文字列でバックスラッシュで\nを打ち消す
 name = 'Alice'
 puts "Hello, \#{name}
 

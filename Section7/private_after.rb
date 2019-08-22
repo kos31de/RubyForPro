@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class User
   # いったんpublicメソッドとして定義する
   def foo

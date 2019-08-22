@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # elseに入ったら例外を発生させるパターン(良い例)
 def currency_of(country)
   case country
@@ -13,4 +15,3 @@ def currency_of(country)
 end
 # 例外が発生する
 currency_of(:italy)
-

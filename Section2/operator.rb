@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 n = 1
 puts n
 
-#n ++
-#puts n
+# n ++
+# puts n
 
 n += 1
 puts n

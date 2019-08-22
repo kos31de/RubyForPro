@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class User
   # weightは外部に公開しない
   attr_reader :name
@@ -10,12 +12,11 @@ class User
   def heavier_than?(other_user)
     puts other_user.weight < @weight
   end
-  
+
   protected
+
   # protectedなので同じクラスorサブクラスならレシーバ付きで呼び出せる
-  def weight
-    @weight
-  end  
+  attr_reader :weight
 end
 
 alice = User.new('Alice', 50)
