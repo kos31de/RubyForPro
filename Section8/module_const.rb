@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 module Loggable
   # 定数を定義する
-  PREFIX = '[LOG]'.freeze
+  PREFIX = '[LOG]'
 
   def log(text)
     puts "#[PREFIX] #{text}"

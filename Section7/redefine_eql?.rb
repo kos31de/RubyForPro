@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 a = 'japan'
 b = 'japan'
 # eql?が真なら、hashも値も同じ

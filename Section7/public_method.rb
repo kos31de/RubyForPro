@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 class User
   def hello
     # nameメソッドはprivateなのでselfをつけるとエラーになる
-    puts "Hello, I am #{self.name}."
+    puts "Hello, I am #{name}."
   end
 
   private

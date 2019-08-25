@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class User
   attr_accessor :name
 
@@ -19,7 +21,7 @@ class User
     # 直接インスタンス変数を書き換える
     @name = 'Dave'
   end
-end 
+end
 
 user = User.new('Alice')
 # Bobにリネーム、、、できてない!

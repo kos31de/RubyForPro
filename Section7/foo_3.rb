@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Foo
   def self.hello
     puts 'hello'

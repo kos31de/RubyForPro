@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 begin
   # 例外が起きそうな処理
 rescue Exception

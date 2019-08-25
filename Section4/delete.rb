@@ -1,4 +1,6 @@
-a = [1,2,3,1,2,3]
+# frozen_string_literal: true
+
+a = [1, 2, 3, 1, 2, 3]
 a.delete(2)
 puts a
 

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # ログ出力用のメソッドを提供するモジュール
 # 「ログ出力できる(log + able)」という意味でLoggableという名前を付けた。
 
@@ -7,7 +9,7 @@ module Loggable
   end
 end
 
-class  Product
+class Product
   # 上で作ったモジュールをincludeする
   include Loggable
 

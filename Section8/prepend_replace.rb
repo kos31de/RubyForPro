@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 # 以下のProductクラスは外部ライブラリで定義されている想定
 class Product
   def name
-    puts "A great film"
+    puts 'A great film'
   end
 end
 

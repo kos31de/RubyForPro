@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # モジュールの定義はincldeするときと同じ
 module Loggable
   def log(text)
@@ -9,7 +11,7 @@ class Product
   # Loggableのモジュールのメソッドを特異メソッド(クラスメソッド)としてミックスインする
   extend Loggable
 
-  def self.create_products(names)
+  def self.create_products(_names)
     # logメソッドをクラスメソッド内で呼び出す
     # (つまりlogメソッド自体もクラスメソッドになっている)
     log 'creare_products is called'

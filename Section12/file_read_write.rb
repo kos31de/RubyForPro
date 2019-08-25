@@ -1,4 +1,6 @@
-#lib内のfizz_buzz.rbの行数をターミナルに表示
+# frozen_string_literal: true
+
+# lib内のfizz_buzz.rbの行数をターミナルに表示
 File.open('../lib/fizz_buzz.rb', 'r') do |f|
   puts f.readlines.count
 end

@@ -1,13 +1,15 @@
-foods = ['ピーマン', 'トマト', 'セロリ']
+# frozen_string_literal: true
+
+foods = %w[ピーマン トマト セロリ]
 count = 0
 foods.each do |food|
   print "#{food}は好きですか?"
-  #わざといいえのみにする
+  # わざといいえのみにする
   answer = 'いいえ'
   puts answer
   count += 1
-  #やりなおしは２回までにする
+  # やりなおしは２回までにする
   redo if answer != 'はい' && count < 2
-  #カウントをリセット
+  # カウントをリセット
   count = 0
 end

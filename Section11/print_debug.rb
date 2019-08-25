@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def greeting(country)
   # greetingメソッドが呼ばれたことを確認
   puts 'greeting start'

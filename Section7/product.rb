@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Product
   attr_reader :name, :price
 
@@ -21,7 +23,7 @@ class DVD < Product
 
   def to_s
     # superでスーパークラスのto_sメソッドを呼び出す
-    #superで呼び出されるのはProductクラスのto_sメソッドの内容
+    # superで呼び出されるのはProductクラスのto_sメソッドの内容
     "#{super}, running_time: #{running_time}"
   end
 end

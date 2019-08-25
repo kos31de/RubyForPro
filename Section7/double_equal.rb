@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Product
   attr_reader :code, :name
 
@@ -33,4 +35,3 @@ puts a.==(c)
 # Product以外の比較はfalse
 puts a == 1
 puts a == 'a'
-

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # ブロックをメソッドの引数として受け取る
 def greeting(&block)
   puts 'おはよう'

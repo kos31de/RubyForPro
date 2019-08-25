@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 numbers = [1, 2, 3, 4, 5].shuffle
 numbers.each do |n|
   puts n
@@ -5,13 +7,13 @@ numbers.each do |n|
 end
 
 ret =
-    while true
-      break
-    end
+  loop do
+    break
+  end
 puts ret
 
 ret =
-    while true
-      break 123
-    end
+  loop do
+    break 123
+  end
 puts ret

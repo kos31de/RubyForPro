@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Foo
   # このputsはクラス定義の読み込み時に呼び出される
   puts "クラス構文の直下のself: #{self}"

@@ -1,4 +1,6 @@
+# frozen_string_literal: true
+
 def add(a, b)
-	return a + b
+  a + b
 end
 puts add(1, 2)

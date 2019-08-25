@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # モジュールの特異メソッドとしてsqrt(平方根)メソッドを利用する
 Math.sqrt(2)
 

@@ -1,13 +1,14 @@
+# frozen_string_literal: true
+
 class User
   # ここから下はprivateメソッド
+
   private
 
-  def foo
-  end
+  def foo; end
 
   # ここから下はpublicメソッド
   public
 
-  def bar
-  end
+  def bar; end
 end

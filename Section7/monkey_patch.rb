@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # 以下のUserクラスは外部ライブラリで定義されている想定
 class User
   def initialize(name)

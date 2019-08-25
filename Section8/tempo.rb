@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Tempo
   include Comparable
 
@@ -9,7 +11,7 @@ class Tempo
   end
 
   # <=>はComparableモジュールで使われる演算子(メソッド)
-  def <=> (other)
+  def <=>(other)
     if other.is_a?(Tempo)
       # bpm同士を<=>で比較した結果を返す
       bpm <=> other.bpm

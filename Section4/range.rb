@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 range = 1..5
 puts range.include?(5)
 
@@ -11,7 +13,7 @@ a = 'abcdef'
 puts a[1..3]
 
 def liquid?(temperature)
-  0 <= temperature && temperature < 100
+  temperature >= 0 && temperature < 100
 end
 
 puts liquid?(-1)

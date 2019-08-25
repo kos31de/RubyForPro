@@ -1,15 +1,17 @@
-['apple', 'melon', 'orange']
-%w!apple melon orange!
-%w(apple melon orange)
-%w(
+# frozen_string_literal: true
+
+%w[apple melon orange]
+%w[apple melon orange]
+%w[apple melon orange]
+%w[
   apple
   melon
   orange
-)
+]
 
-#値にスペースを含める場合は\でエスケープする
-%w(big\ apple small\ melon orange)
+# 値にスペースを含める場合は\でエスケープする
+%w[big\ apple small\ melon orange]
 
-#式展開や改行文字、タブ文字を含めたい場合は%W
+# 式展開や改行文字、タブ文字を含めたい場合は%W
 prefix = 'This is'
-puts %W(#{prefix}\ an\ apple small\nmelon orange)
+puts %W[#{prefix}\ an\ apple small\nmelon orange]
