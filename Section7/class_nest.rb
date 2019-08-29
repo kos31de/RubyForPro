@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 class User
   class BloodType
     attr_reader :type
-  
+
     def initialize(type)
       @type = type
     end

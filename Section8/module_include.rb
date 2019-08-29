@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Product
   def title
     log 'title is called'
@@ -28,4 +30,3 @@ product.title
 
 user = User.new
 user.name
-

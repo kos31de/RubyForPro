@@ -1,21 +1,23 @@
-#iオプションを付けると大文字小文字を区別しない
+# frozen_string_literal: true
+
+# iオプションを付けると大文字小文字を区別しない
 puts 'HELLO' =~ /hello/i
 
-#%rを使った場合も最後にオプションをつける
-puts 'HELLO' =~ %r{hello}i
+# %rを使った場合も最後にオプションをつける
+puts 'HELLO' =~ /hello/i
 
-#Regexp.newを使う場合は、Regexp::IGNORECASEという定数を渡す
+# Regexp.newを使う場合は、Regexp::IGNORECASEという定数を渡す
 regexp = Regexp.new('hello', Regexp::IGNORECASE)
 puts 'HELLO' =~ regexp
 
-#mオプションで任意の文字を表すドット.が改行文字にマッチするようになる
+# mオプションで任意の文字を表すドット.が改行文字にマッチするようになる
 puts "Hello\nBye" =~ /Hello.Bye/m
 
-#Regexp.newを使う場合は、Regexp::MULTILINEという定数を渡す
-regexp = Regexp.new("Hello.Bye", Regexp::MULTILINE)
+# Regexp.newを使う場合は、Regexp::MULTILINEという定数を渡す
+regexp = Regexp.new('Hello.Bye', Regexp::MULTILINE)
 puts "Hello\nBye" =~ regexp
 
-#xオプションでは改行やスペースが無視され、コメントも書ける
+# xオプションでは改行やスペースが無視され、コメントも書ける
 puts regexp = /
     \d{3} #郵便番号の先頭3桁
     \-   #半角スペースで区切る
@@ -23,7 +25,7 @@ puts regexp = /
 /x
 '123-4567' =~ regexp
 
-#バックスラッシュを特別扱いしないように'TEXT'を使う
+# バックスラッシュを特別扱いしないように'TEXT'を使う
 puts pattern = <<'TEXT'
     \d{3} #郵便番号の先頭3桁
     - #区切り文字のハイフン
@@ -32,9 +34,9 @@ TEXT
 regexp = Regexp.new(pattern, Regexp::EXTENDED)
 '123-4567' =~ regexp
 
-#iオプションとmオプションを同時に使う
+# iオプションとmオプションを同時に使う
 puts "HELLO\nBYE" =~ /Hello.Bye/im
 
-#|で連結
+# |で連結
 regexp = Regexp.new('Hello.Bye', Regexp::IGNORECASE | Regexp::MULTILINE)
 puts "HELLO\nBYE" =~ regexp

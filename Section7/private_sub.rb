@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Product
   def to_s
     # nameは常に"A great movie"になる、とは限らない
@@ -13,6 +15,7 @@ end
 
 class DVD < Product
   private
+
   # スーパークラスのprivateメソッドをオーバーライドする
   def name
     puts 'An awesome film'

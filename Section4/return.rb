@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 def greeting(country)
-  #countryがnilならメソッドを抜ける
+  # countryがnilならメソッドを抜ける
   return 'countryを入力して下さい' if country.nil?
 
   if country == 'japan'

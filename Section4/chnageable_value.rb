@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def greeting(*names)
   "#{names.join('と')}、こんにちは！"
 end

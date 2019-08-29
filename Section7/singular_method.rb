@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 alice = 'I am Alice.'
 # aliceというオブジェクトに特異メソッドを追加するもうひとつの方法
 class << alice

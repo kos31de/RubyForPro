@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 # 日本語版のgreetingメソッド
 def greeting_ja(&block)
-  texts = ['おはよう', 'こんにちは', 'こんばんは']
+  texts = %w[おはよう こんにちは こんばんは]
   # ブロックを別のメソッドに引き渡す
   greeting_common(texts, &block)
 end
@@ -21,10 +23,8 @@ def greeting_common(texts, &block)
 end
 
 # 日本語版のgreetingメソッドを呼び出す
-  greeting_ja do |text|
-    text * 2
-  end
+greeting_ja do |text|
+  text * 2
+end
 
-  greeting_en do |text|
-    text.upcase
-  end
+greeting_en(&:upcase)

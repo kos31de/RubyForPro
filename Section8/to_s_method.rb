@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module A
   def to_s
     "<A> #{super}"
@@ -28,7 +30,5 @@ end
 dvd = DVD.new
 puts dvd.to_s
 p DVD.ancestors
-=begin
-<DVD> <B> <A> <Product> #<DVD:0x007fcc38021d70>
-[DVD, B, A, Product, Object, Kernel, BasicObject]
-=end
+# <DVD> <B> <A> <Product> #<DVD:0x007fcc38021d70>
+# [DVD, B, A, Product, Object, Kernel, BasicObject]

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # グローバル変数の宣言と値の代入
 $program_name = 'Awesome program'
 
@@ -25,4 +27,3 @@ puts program.name
 # Program.newのタイミングで$program_nameがSuper programに変更される
 puts Program.name
 puts $program_name
-

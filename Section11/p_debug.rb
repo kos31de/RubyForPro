@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def calc_fare(ticket)
   from = STATIONS.index(ticket.stamped_at)
   to = STATIONS.index(@name)
@@ -5,4 +7,4 @@ def calc_fare(ticket)
   distance = p to - from
   FARES[distance - 1]
 end
-calc_fare()
+calc_fare

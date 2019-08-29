@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # ブロックではなく、1個のProcオブジェクを引数として受け取る(&を受け付けない)
 def greeting(arrange_proc)
   puts 'おはよう'
@@ -7,5 +9,5 @@ def greeting(arrange_proc)
 end
 
 # Procオブジェクトを普通の引数としてgreetingメソッドに渡す(&を受け付けない)
-repeat_proc = Proc.new {|text| text * 2 }
+repeat_proc = proc { |text| text * 2 }
 greeting(repeat_proc)

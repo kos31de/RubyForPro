@@ -1,10 +1,12 @@
-country  = 'italy'
+# frozen_string_literal: true
+
+country = 'italy'
 if country == 'japan'
-	puts 'こんにちは'
+  puts 'こんにちは'
 elsif country == 'us'
-	puts 'Hello'
+  puts 'Hello'
 elsif country == 'italy'
-	puts 'ciao'
+  puts 'ciao'
 else
-	puts '??'
+  puts '??'
 end

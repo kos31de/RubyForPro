@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 point = 7
 day = 1
 point *= 5 if day == 1

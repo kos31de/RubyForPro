@@ -1,5 +1,7 @@
-puts ['ruby', 'java', 'perl'].map {|s| s.upcase}
-puts ['ruby', 'java', 'perl'].map(&:upcase)
+# frozen_string_literal: true
 
-puts [1, 2, 3, 4, 5, 6].select {|n| n.odd? }
+puts %w[ruby java perl].map(&:upcase)
+puts %w[ruby java perl].map(&:upcase)
+
+puts [1, 2, 3, 4, 5, 6].select(&:odd?)
 puts [1, 2, 3, 4, 5, 6].select(&:odd?)

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module StringShuffle
   # refinementsが目的なので、refineメソッドを使う
   refine String do
@@ -6,4 +8,3 @@ module StringShuffle
     end
   end
 end
-

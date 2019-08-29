@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def display_name(object)
   puts "Name is <<#{object.name}"
 end

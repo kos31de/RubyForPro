@@ -1,4 +1,6 @@
-fruits = ['apple', 'melon', 'orange']
+# frozen_string_literal: true
+
+fruits = %w[apple melon orange]
 numbers = [1, 2, 3]
 catch :done do
   fruits.shuffle.each do |fruit|
